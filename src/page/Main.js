@@ -63,4 +63,4 @@ export default function Main() {
 // 100% xl
 // 150% lg
 // 200% md
-// 400% sm
+// 300% sm

@@ -5,10 +5,9 @@ import { Box, Grid, GridItem, HStack, Image, Text } from '@chakra-ui/react'
 
 export default function OverviewSectionC(props) {
     return (
-        <Box h='100vh'>
+        <Box>
             {/* Title + Description */}
             <Grid
-                h='30%'
                 templateColumns='repeat(5, 1fr)'
                 mt={['8px', '16px', '32px', '64px']}
             >
@@ -34,11 +33,11 @@ export default function OverviewSectionC(props) {
                 <GridItem colSpan={3}>
                     <FadeRight>
                         <Text
-                            fontSize={['6px', '12px', '16px', '20px']}
+                            fontSize={['10px', '12px', '16px', '20px']}
                             fontWeight='normal'
                             align='end'
                             pr={['12px', '20px', '24px', '32px']}
-                            mt={['16px', '10px', '10px', '10px']}
+                            mt={['4px', '6px', '8px', '10px']}
                             ml='8px'>
                             {props.description}
                         </Text>
@@ -48,9 +47,8 @@ export default function OverviewSectionC(props) {
 
             {/* Image */}
             <Grid
-                h='70%'
                 templateColumns='repeat(10, 1fr)'
-                mt={['12px', '4px', '8px', '2px']}
+                mt={['12px', '16px', '20px', '24px']}
             >
                 <GridItem colSpan={3}>
                     <Fade>

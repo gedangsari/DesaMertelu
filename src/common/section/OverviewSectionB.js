@@ -32,7 +32,7 @@ export default function OverviewSectionB(props) {
                     >
                         <FadeRight>
                             <Text
-                                fontSize={['6px', '12px', '16px', '20px']}
+                                fontSize={['10px', '12px', '16px', '20px']}
                                 fontWeight='normal'
                                 mb={['10px', '14px', '16px', '32px']}>
                                 {props.description}
@@ -40,7 +40,7 @@ export default function OverviewSectionB(props) {
 
                             <Link
                                 href={props.url}
-                                fontSize={['4px', '10px', '12px', '16px']}
+                                fontSize={['8px', '10px', '12px', '16px']}
                                 fontWeight='medium'
                                 color='green.600'
                                 isExternal>

@@ -8,7 +8,7 @@ const NavBar = (props) => {
   return (
     <NavBarContainer {...props}>
       <Link href='/#home'>
-        <Logo color='white' display={['none', 'block', 'block', 'block']} />
+        <Logo color='white' display={['block', 'block', 'block', 'block']} />
       </Link>
       {/* <NavLinks />
       <NavMenu /> */}

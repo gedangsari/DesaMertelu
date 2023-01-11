@@ -18,13 +18,13 @@ export default function HeadingSection(props) {
             textColor='white'
             textAlign='center'
             justifyContent='center'
-            px={16}
+            px={12}
         >
             <FadeRight>
-                <Text fontSize={[12, 16, 24, 32]} fontWeight='bold'>
+                <Text fontSize={['12px', '18px', '28px', '36px']} fontWeight='bold'>
                     {props.title}
                 </Text>
-                <Text fontSize={[8, 10, 14, 20]} fontWeight='medium'>
+                <Text fontSize={['10px', '12px', '18px', '24px']} fontWeight='medium' mt={[0, 1, 1, 1]}>
                     {props.subtitle}
                 </Text>
             </FadeRight>

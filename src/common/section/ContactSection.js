@@ -48,7 +48,7 @@ export default function ContactSection(props) {
                         Kontak
                     </Text>
                     <Text
-                        fontSize={['5px', '8px', '12px', '16px']}
+                        fontSize={['6px', '8px', '12px', '16px']}
                         fontWeight='light'
                     >
                         <Link href={'https://wa.me/' + props.contactNumber} isExternal>
@@ -64,7 +64,7 @@ export default function ContactSection(props) {
                             h={['12px', '24px', '32px', '40px']} />
                     </Link>
                     <Text
-                        fontSize={['5px', '8px', '12px', '16px']}
+                        fontSize={['6px', '8px', '12px', '16px']}
                         fontWeight='light'
                     >
                         Kalurahan Mertelu, Kapanewon Gedangsari,<br />Kabupaten Gunungkidul, Daerah Istimewa Yogyakarta
@@ -78,7 +78,7 @@ export default function ContactSection(props) {
                 bg='green.600'
                 color='white'
                 px={6}
-                fontSize={['4px', '7px', '10px', '14px']}
+                fontSize={['5px', '7px', '10px', '14px']}
                 fontWeight='light'
             >
                 <Text w='40%'>
