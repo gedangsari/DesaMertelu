@@ -1,13 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Fonts from './assets/font/fonts';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
+import theme from './common/util/theme';
+import { BrowserRouter } from 'react-router-dom';
+import { ChakraProvider } from '@chakra-ui/react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <ChakraProvider theme={theme}>
+        <Fonts />
+        <App />
+      </ChakraProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
