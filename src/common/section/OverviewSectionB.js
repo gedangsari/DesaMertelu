@@ -6,18 +6,18 @@ import { Box, Grid, GridItem, HStack, Image, Link, Text, VStack } from "@chakra-
 export default function OverviewSectionB(props) {
     return (
         <Grid templateColumns='repeat(5, 1fr)'>
-            <GridItem colSpan={3} mt={['8px', '16px', '32px', '64px']}>
+            <GridItem colSpan={3} mt={['16px', '24px', '32px', '64px']}>
                 <VStack align='start' pr={['8px', '8px', '8px', '8px']}>
 
                     {/* Title */}
-                    <HStack bg='white' mb={['4px', '4px', '16px', '32px']}>
+                    <HStack bg='white'>
                         <FadeRight>
                             <Box
                                 bg='green.500'
                                 w={['22px', '28px', '32px', '40px']}
                                 h={['60px', '60px', '90px', '120px']} />
                             <Text
-                                fontSize={['12px', '18px', '32px', '40px']}
+                                fontSize={['13px', '18px', '32px', '40px']}
                                 fontWeight='bold'
                                 pl={['0px', '12px', '16px', '16px']}>
                                 {props.title}
@@ -29,12 +29,14 @@ export default function OverviewSectionB(props) {
                     <Box
                         pl={['30px', '48px', '56px', '62px']}
                         pr={['6px', '24px', '24px', '24px']}
+                        pt={['8px', '12px', '16px', '32px']}
+                        pb={['20px', '20px', '32px', '64px']}
                     >
                         <FadeRight>
                             <Text
-                                fontSize={['10px', '12px', '16px', '20px']}
+                                fontSize={['12px', '15px', '16px', '20px']}
                                 fontWeight='normal'
-                                mb={['10px', '14px', '16px', '32px']}>
+                                mb={['12px', '16px', '18px', '34px']}>
                                 {props.description}
                             </Text>
 
@@ -55,7 +57,7 @@ export default function OverviewSectionB(props) {
                 <Fade>
                     <Image
                         src={props.image}
-                        h='100vh'
+                        h={['50vh', '50vh', '100vh', '100vh']}
                         w='100vw'
                         objectFit='cover' />
                 </Fade>

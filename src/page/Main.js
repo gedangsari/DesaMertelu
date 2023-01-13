@@ -1,4 +1,4 @@
-import Contact from '../common/section/ContactSection';
+import Contact from '../common/section/RouteSection';
 import Heading from '../common/section/HeadingSection';
 import Layout from '../common/layout/Layout';
 import OverviewSectionA from '../common/section/OverviewSectionA';

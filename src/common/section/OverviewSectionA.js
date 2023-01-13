@@ -10,20 +10,20 @@ export default function OverviewSectionA(props) {
                 <Fade>
                     <Image
                         src={props.image}
-                        h='100vh'
+                        h={['50vh', '50vh', '100vh', '100vh']}
                         w='100vw'
                         objectFit='cover' />
                 </Fade>
             </GridItem>
 
-            <GridItem colSpan={2} mt={['8px', '16px', '32px', '64px']} textAlign='end'>
+            <GridItem colSpan={2} mt={['16px', '24px', '32px', '64px']} textAlign='end'>
                 <VStack align='end' pl={['8px', '8px', '8px', '8px']}>
 
                     {/* Title */}
-                    <HStack bg='white' mb={['4px', '4px', '16px', '32px']}>
+                    <HStack bg='white'>
                         <FadeLeft>
                             <Text
-                                fontSize={['12px', '18px', '32px', '40px']}
+                                fontSize={['13px', '18px', '32px', '40px']}
                                 fontWeight='bold'
                                 pr={['0px', '12px', '16px', '16px']}>
                                 {props.title}
@@ -39,12 +39,14 @@ export default function OverviewSectionA(props) {
                     <Box
                         pr={['30px', '48px', '56px', '62px']} // pr title + w box + 8
                         pl={['6px', '24px', '24px', '24px']}
+                        pt={['8px', '12px', '16px', '32px']}
+                        pb={['20px', '20px', '32px', '64px']}
                     >
                         <FadeLeft>
                             <Text
-                                fontSize={['10px', '12px', '16px', '20px']}
+                                fontSize={['12px', '15px', '16px', '20px']}
                                 fontWeight='normal'
-                                mb={['10px', '14px', '16px', '32px']}>
+                                mb={['12px', '16px', '18px', '34px']}>
                                 {props.description}
                             </Text>
 
