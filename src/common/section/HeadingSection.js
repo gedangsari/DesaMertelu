@@ -1,3 +1,4 @@
+import '../css/ScrollDown.css';
 import FadeRight from '../animation/FadeRight';
 import React from 'react';
 import { Text, VStack } from '@chakra-ui/react';
@@ -28,6 +29,12 @@ export default function HeadingSection(props) {
                     {props.subtitle}
                 </Text>
             </FadeRight>
+
+            <span class='scroll-btn'>
+                <span class='mouse'>
+                    <span></span>
+                </span>
+            </span>
         </VStack>
     );
 };
