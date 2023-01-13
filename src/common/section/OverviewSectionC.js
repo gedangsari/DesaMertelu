@@ -37,7 +37,6 @@ export default function OverviewSectionC(props) {
                             fontWeight='normal'
                             align='end'
                             pr={['12px', '20px', '24px', '32px']}
-                            mt={['4px', '6px', '8px', '10px']}
                             ml='8px'>
                             {props.description}
                         </Text>

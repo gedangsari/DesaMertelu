@@ -1,10 +1,11 @@
-import Contact from '../common/section/RouteSection';
-import Heading from '../common/section/HeadingSection';
 import Layout from '../common/layout/Layout';
+import React from 'react';
+
+import HeadingSection from '../common/section/HeadingSection';
 import OverviewSectionA from '../common/section/OverviewSectionA';
 import OverviewSectionB from '../common/section/OverviewSectionB';
 import OverviewSectionC from '../common/section/OverviewSectionC';
-import React from 'react';
+import RouteSection from '../common/section/RouteSection';
 
 import HeadingImage from '../assets/image/heading.jpg';
 import OverviewAnyamanImage from '../assets/image/overview_anyaman.jpg';
@@ -16,7 +17,7 @@ import OverviewYohnanImage from '../assets/image/overview_yohnan.jpg';
 export default function Main() {
   return (
     <Layout>
-      <Heading
+      <HeadingSection
         title='Amazing and Beautiful Views for Everybody'
         subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         image={HeadingImage}
@@ -45,10 +46,7 @@ export default function Main() {
         imageLeft={OverviewAnyamanImage}
         imageRight={OverviewReogImage}
       />
-      <Contact
-        contactName='John Doe'
-        contactNumber='+6281234567890'
-      />
+      <RouteSection />
     </Layout>
   );
 };
@@ -62,5 +60,5 @@ export default function Main() {
 // Patokan
 // 100% xl
 // 150% lg
-// 200% md
-// 300% sm
+// 200% md -> iPad Air
+// 300% sm -> Pixel 5

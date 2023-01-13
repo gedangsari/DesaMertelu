@@ -56,7 +56,7 @@ export default function OverviewSectionA(props) {
                                 fontWeight='medium'
                                 color='green.600'
                                 isExternal>
-                                <Text>Lihat map</Text>
+                                <Text>Lihat lebih lanjut</Text>
                             </Link>
                         </FadeLeft>
                     </Box>
