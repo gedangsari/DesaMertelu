@@ -20,6 +20,7 @@ export default function HeadingSection(props) {
             textAlign='center'
             justifyContent='center'
             px={['24px', '28px', '32px', '36px']}
+            maxH={['50vh', '50vh', '100vh', '100vh']}
         >
             <FadeRight>
                 <Text fontSize={['15px', '20px', '28px', '36px']} fontWeight='bold'>

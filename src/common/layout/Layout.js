@@ -1,6 +1,7 @@
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import React from 'react';
+import ScrollButton from '../components/ScrollButton';
 
 const Layout = ({ children }) => {
     return (
@@ -11,6 +12,7 @@ const Layout = ({ children }) => {
                 contactName='John Doe'
                 contactNumber='+6281234567890'
             />
+            <ScrollButton />
         </>
     );
 };
