@@ -56,7 +56,7 @@ export default function Footer(props) {
                 fontWeight='light'
             >
                 <Text w='40%'>
-                    Copyright © 2023 Mertelu.com. All Rights Reserved.
+                    Copyright © 2023 <Link href='#'>Mertelu.com</Link>. All Rights Reserved.
                 </Text>
                 <Text w='60%' textAlign='end'>
                     KKN-PPM UGM Periode IV Tahun 2022 - <Link href='https://instagram.com/gedangsari.asri' isExternal>
