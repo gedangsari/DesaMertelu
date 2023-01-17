@@ -3,10 +3,10 @@ import Header from '../components/Header';
 import React from 'react';
 import ScrollButton from '../components/ScrollButton';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, ...props }) => {
     return (
         <>
-            <Header />
+            <Header {...props} />
             {children}
             <Footer
                 contactName='John Doe'

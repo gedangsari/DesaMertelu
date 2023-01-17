@@ -16,7 +16,7 @@ import OverviewYohnanImage from '../assets/image/overview_yohnan.jpg';
 
 export default function Main() {
   return (
-    <Layout>
+    <Layout color='white'>
       <HeadingSection
         title='Amazing and Beautiful Views for Everybody'
         subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
