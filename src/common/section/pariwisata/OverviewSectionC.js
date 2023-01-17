@@ -1,5 +1,5 @@
-import Fade from '../animation/Fade';
-import FadeRight from '../animation/FadeRight';
+import Fade from '../../animation/Fade';
+import FadeRight from '../../animation/FadeRight';
 import React from 'react';
 import { Box, Grid, GridItem, HStack, Image, Text } from '@chakra-ui/react'
 

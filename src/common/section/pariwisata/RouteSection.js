@@ -1,4 +1,4 @@
-import FadeRight from '../animation/FadeRight';
+import FadeRight from '../../animation/FadeRight';
 import React from 'react';
 import { Box, Text, VStack } from '@chakra-ui/react';
 

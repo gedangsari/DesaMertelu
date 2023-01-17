@@ -1,18 +1,18 @@
 import Layout from '../common/layout/Layout';
 import React from 'react';
 
-import HeadingSection from '../common/section/HeadingSection';
-import OverviewSectionA from '../common/section/OverviewSectionA';
-import OverviewSectionB from '../common/section/OverviewSectionB';
-import OverviewSectionC from '../common/section/OverviewSectionC';
-import RouteSection from '../common/section/RouteSection';
+import HeadingSection from '../common/section/pariwisata/HeadingSection';
+import OverviewSectionA from '../common/section/pariwisata/OverviewSectionA';
+import OverviewSectionB from '../common/section/pariwisata/OverviewSectionB';
+import OverviewSectionC from '../common/section/pariwisata/OverviewSectionC';
+import RouteSection from '../common/section/pariwisata/RouteSection';
 
-import HeadingImage from '../assets/image/heading.jpg';
-import OverviewAnyamanImage from '../assets/image/overview_anyaman.jpg';
-import OverviewCabaanImage from '../assets/image/overview_cabaan.jpg';
-import OverviewGvgImage from '../assets/image/overview_gvg.jpg';
-import OverviewReogImage from '../assets/image/overview_reog.jpg';
-import OverviewYohnanImage from '../assets/image/overview_yohnan.jpg';
+import HeadingImage from '../assets/image/pariwisata/jumbotron_pariwisata.jpg';
+import OverviewAnyamanImage from '../assets/image/pariwisata/overview_anyaman.jpg';
+import OverviewCabaanImage from '../assets/image/pariwisata/overview_cabaan.jpg';
+import OverviewGvgImage from '../assets/image/pariwisata/overview_gvg.jpg';
+import OverviewReogImage from '../assets/image/pariwisata/overview_reog.jpg';
+import OverviewYohnanImage from '../assets/image/pariwisata/overview_yohnan.jpg';
 
 export default function Main() {
   return (

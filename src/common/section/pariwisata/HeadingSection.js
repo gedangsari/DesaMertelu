@@ -1,5 +1,5 @@
-import '../css/ScrollDown.css';
-import FadeRight from '../animation/FadeRight';
+import '../../css/ScrollDown.css';
+import FadeRight from '../../animation/FadeRight';
 import React from 'react';
 import { Text, VStack } from '@chakra-ui/react';
 
@@ -20,7 +20,7 @@ export default function HeadingSection(props) {
             textAlign='center'
             justifyContent='center'
             px={['24px', '28px', '32px', '36px']}
-            maxH={['50vh', '50vh', '100vh', '100vh']}
+            maxH={['60vh', '60vh', '100vh', '100vh']}
         >
             <FadeRight>
                 <Text fontSize={['15px', '20px', '28px', '36px']} fontWeight='bold'>
