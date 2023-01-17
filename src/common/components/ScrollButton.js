@@ -29,6 +29,7 @@ const ScrollButton = () => {
         <IconButton
                 aria-label='Scroll to top'
                 icon={<ScrollUpIcon />}
+                colorScheme='blackAlpha'
                 display={visible ? 'center' : 'none'}
                 onClick={scrollToTop}
                 position='fixed'
