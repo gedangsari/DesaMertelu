@@ -65,29 +65,21 @@
 }
 
 .scroll-btn {
-    display: block;
     position: absolute;
     left: 0;
     right: 0;
-    text-align: center;
-    top: 80vh;
+    top: 82vh;
 }
 
 .scroll-btn>* {
-    display: inline-block;
-    line-height: 18px;
-    font-size: 13px;
-    font-weight: normal;
     color: #7f8c8d;
-    color: #ffffff;
-    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing: 2px;
+    color: white;
 }
 
 .scroll-btn>*:hover,
 .scroll-btn>*:focus,
 .scroll-btn>*.active {
-    color: #ffffff;
+    color: white;
 }
 
 .scroll-btn>*:hover,
