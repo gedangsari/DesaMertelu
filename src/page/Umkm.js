@@ -22,7 +22,7 @@ export default function Umkm() {
             <HeadingSection
                 title='UMKM'
                 subtitle='Usaha Mikro, Kecil, Menengah'
-                description='Kalurahan Mertelu, Kepanewon Gedangsari, Kabupaten Gunungkidul, Daerah Istimewa Yogyakarta'
+                description='Kalurahan Mertelu, Kapanewon Gedangsari, Kabupaten Gunungkidul, Daerah Istimewa Yogyakarta'
                 image={HeadingImage}
             />
             <ProductsSection
