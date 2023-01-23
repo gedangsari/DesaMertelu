@@ -26,7 +26,11 @@ export default function Footer(props) {
                     >
                         <Link href={'https://wa.me/' + props.contactNumber} isExternal>
                             {props.contactNumber}
-                        </Link> ({props.contactName})
+                        </Link> - <b>{props.contactName}</b>
+                        <br />
+                        <Link href={'mailto:' + props.contactEmail} isExternal>
+                            {props.contactEmail}
+                        </Link>
                     </Text>
                 </VStack>
 

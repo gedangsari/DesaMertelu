@@ -11,6 +11,7 @@ const Layout = ({ children, ...props }) => {
             <Footer
                 contactName='John Doe'
                 contactNumber='+6281234567890'
+                contactEmail='johndoe@mertelu.com'
             />
             <ScrollButton />
         </>
