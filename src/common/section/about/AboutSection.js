@@ -5,7 +5,7 @@ import { Box, Image, Text, VStack } from "@chakra-ui/react";
 
 export default function AboutSection(props) {
     return (
-        <Box pt={['110px','130px','150px','150px']}>
+        <Box pt={['110px', '130px', '150px', '150px']}>
 
             {/* About */}
             <VStack>
@@ -35,7 +35,9 @@ export default function AboutSection(props) {
                         <Text
                             fontSize={['12px', '15px', '16px', '20px']}
                             fontWeight='normal'
-                            mb={['12px', '16px', '18px', '34px']}>
+                            mb={['12px', '16px', '18px', '34px']}
+                            textAlign='justify'
+                        >
                             {props.aboutDescription}
                         </Text>
                     </FadeRight>
@@ -76,6 +78,7 @@ export default function AboutSection(props) {
                     pb={['20px', '20px', '32px', '64px']}
                     fontSize={['12px', '15px', '16px', '20px']}
                     fontWeight='normal'
+                    textAlign='justify'
                 >
                     <FadeRight>
                         {props.originDescription

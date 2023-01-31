@@ -1,7 +1,7 @@
 import Fade from '../../animation/Fade';
 import FadeRight from '../../animation/FadeRight';
 import React from 'react';
-import { Box, Grid, GridItem, HStack, Image, Link, Text, VStack } from "@chakra-ui/react";
+import { Box, Grid, GridItem, HStack, Image, Text, VStack } from "@chakra-ui/react";
 import { Table, Tbody, Tr, Td, TableContainer } from '@chakra-ui/react'
 
 export default function PlantSection(props) {
@@ -25,7 +25,7 @@ export default function PlantSection(props) {
                                     fontSize={['13px', '18px', '32px', '40px']}
                                     fontWeight='bold'
                                     pl={['0px', '12px', '16px', '16px']}>
-                                    {props.scientificName}<br />({props.localName})
+                                    <i>{props.scientificName}</i><br />({props.localName})
                                 </Text>
                             </FadeRight>
                         </HStack>
@@ -95,10 +95,11 @@ export default function PlantSection(props) {
 
             {/* Description */}
             <Box
-                fontSize={['12px', '15px', '16px', '20px']}
-                fontWeight='normal'
                 py={['16px', '24px', '32px', '64px']}
                 px={['30px', '48px', '56px', '62px']}
+                fontSize={['12px', '15px', '16px', '20px']}
+                fontWeight='normal'
+                textAlign='justify'
             >
                 {props.description
                     .split('\\n')
