@@ -9,9 +9,9 @@ const Layout = ({ children, ...props }) => {
             <Header {...props} />
             {children}
             <Footer
-                contactName='John Doe'
-                contactNumber='+6281234567890'
-                contactEmail='johndoe@mertelu.com'
+                contactName='Nursiyamtoro'
+                contactNumber='+6285228868024'
+                contactEmail='nursiyamtoro@gmail.com'
             />
             <ScrollButton />
         </>
