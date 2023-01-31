@@ -1,6 +1,7 @@
 import axios from 'axios';
 import Layout from '../common/layout/Layout';
 import React, { useState, useEffect } from 'react';
+import { Image, Link } from '@chakra-ui/react';
 
 import HeadingSection from '../common/section/pariwisata/HeadingSection';
 import OverviewSectionA from '../common/section/pariwisata/OverviewSectionA';
@@ -14,6 +15,7 @@ import OverviewCabaanImage from '../assets/image/pariwisata/overview_cabaan.jpg'
 import OverviewGvgImage from '../assets/image/pariwisata/overview_gvg.jpg';
 import OverviewReogImage from '../assets/image/pariwisata/overview_reog.jpg';
 import OverviewYohnanImage from '../assets/image/pariwisata/overview_yohnan.jpg';
+import DownloadAppImage from '../assets/image/pariwisata/download_app.png';
 
 export default function Main() {
   const [pariwisata, setPariwisata] = useState([]);
@@ -61,6 +63,9 @@ export default function Main() {
       <RouteSection
         title='Ayo mulai perjalananmu ke Mertelu sekarang'
       />
+      <Link href='https://play.google.com/store/apps/details?id=com.mertelu.wisata' isExternal>
+        <Image src={DownloadAppImage} w='100vw' />
+      </Link>
     </Layout>
   );
 };
