@@ -50,9 +50,10 @@ const NavLinks = () => {
         justify='flex-end'
         direction='row'
       >
-        <NavItem to='/about'>About Us</NavItem>
         <NavItem to='/home'>Pariwisata</NavItem>
         <NavItem to='/umkm'>UMKM</NavItem>
+        <NavItem to='/potential'>Potensi</NavItem>
+        <NavItem to='/about'>Tentang</NavItem>
       </Stack>
     </Box>
   );
@@ -87,9 +88,10 @@ const NavMenu = (props) => {
         />
 
         <MenuList>
-          <NavMenuItem to='/about'>About Us</NavMenuItem>
           <NavMenuItem to='/home'>Pariwisata</NavMenuItem>
           <NavMenuItem to='/umkm'>UMKM</NavMenuItem>
+          <NavMenuItem to='/potential'>Potensi</NavMenuItem>
+          <NavMenuItem to='/about'>Tentang</NavMenuItem>
         </MenuList>
       </Menu>
     </Box>
