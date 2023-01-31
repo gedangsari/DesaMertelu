@@ -46,7 +46,9 @@ export default function Main() {
         imageLeft={OverviewAnyamanImage}
         imageRight={OverviewReogImage}
       />
-      <RouteSection />
+      <RouteSection
+        title="Let's start your journey to Mertelu now"
+      />
     </Layout>
   );
 };

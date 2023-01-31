@@ -4,7 +4,10 @@ import { Box, Grid, GridItem, HStack, Image, Text, VStack } from "@chakra-ui/rea
 
 export default function OverviewSectionB(props) {
     return (
-        <Grid templateColumns='repeat(10, 1fr)' py={['16px', '24px', '32px', '64px']}>
+        <Grid
+            templateColumns='repeat(10, 1fr)'
+            py={['16px', '24px', '32px', '64px']}
+        >
             <GridItem colSpan={[10, 10, 3, 3]}>
                 <VStack align='start'>
 

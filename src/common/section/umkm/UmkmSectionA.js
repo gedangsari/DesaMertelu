@@ -5,7 +5,10 @@ import { Box, Grid, GridItem, HStack, Image, Text, VStack } from "@chakra-ui/rea
 
 export default function UmkmSectionA(props) {
     return (
-        <Grid templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(2, 1fr)']} py={['16px', '24px', '32px', '64px']}>
+        <Grid
+            templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(2, 1fr)']}
+            py={['16px', '24px', '32px', '64px']}
+        >
             <GridItem colSpan={1}>
                 <VStack>
                     <Fade>
