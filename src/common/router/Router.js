@@ -16,7 +16,7 @@ export default function Router() {
             <Route path='/umkm' element={<Umkm />} />
             <Route path='/potential' element={<Potential />} />
             <Route path='/about' element={<About />} />
-            <Route path='/plant/:id' element={<Plant />} />
+            <Route path='/plants/:id' element={<Plant />} />
             <Route path='*' element={<NotFound />} />
         </Routes>
     );
