@@ -14,7 +14,7 @@ export default function ProductsSection(props) {
                     fontWeight='bold'
                     mb={['20px']}
                 >
-                    UMKM Product
+                    {props.title}
                 </Text>
             </FadeRight>
 
