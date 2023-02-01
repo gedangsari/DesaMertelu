@@ -5,7 +5,7 @@ import { Box, Grid, GridItem, HStack, Image, Link, Text, VStack } from "@chakra-
 
 export default function OverviewSectionA(props) {
     return (
-        <Grid templateColumns='repeat(5, 1fr)'>
+        <Grid templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(5, 1fr)', 'repeat(5, 1fr)']}>
             <GridItem colSpan={3}>
                 <Fade>
                     <Image
@@ -46,6 +46,7 @@ export default function OverviewSectionA(props) {
                             <Text
                                 fontSize={['12px', '15px', '16px', '20px']}
                                 fontWeight='normal'
+                                textAlign='justify'
                                 mb={['12px', '16px', '18px', '34px']}>
                                 {props.description}
                             </Text>

@@ -37,7 +37,8 @@ export default function OverviewSectionB(props) {
                         <FadeRight>
                             <Text
                                 fontSize={['12px', '15px', '16px', '20px']}
-                                fontWeight='normal'>
+                                fontWeight='normal'
+                                textAlign='justify'>
                                 {props.description1}
                             </Text>
                         </FadeRight>
@@ -71,6 +72,7 @@ export default function OverviewSectionB(props) {
                         <Text
                             fontSize={['12px', '15px', '16px', '20px']}
                             fontWeight='normal'
+                            textAlign='justify'
                             mt={['12px', '16px', '18px', '34px']}>
                             {props.description2}
                         </Text>

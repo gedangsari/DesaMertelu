@@ -50,7 +50,8 @@ export default function UmkmSectionA(props) {
                         <FadeLeft>
                             <Text
                                 fontSize={['12px', '15px', '16px', '20px']}
-                                fontWeight='normal'>
+                                fontWeight='normal'
+                                textAlign='justify'>
                                 {props.description}
                             </Text>
                         </FadeLeft>

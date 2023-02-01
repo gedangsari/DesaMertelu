@@ -1,4 +1,3 @@
-import axios from 'axios';
 import Layout from "../common/layout/Layout";
 import React from "react";
 

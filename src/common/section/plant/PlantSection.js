@@ -8,10 +8,10 @@ export default function PlantSection(props) {
     return (
         <>
             <Grid
-                templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(5, 1fr)', 'repeat(5, 1fr)']}
+                templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(10, 1fr)', 'repeat(10, 1fr)']}
                 pt='150px'
             >
-                <GridItem colSpan={3} mt={['16px', '24px', '32px', '64px']}>
+                <GridItem colSpan={5} mt={['16px', '24px', '32px', '64px']}>
                     <VStack align='start' pr={['8px', '8px', '8px', '8px']}>
 
                         {/* Title */}
@@ -82,7 +82,7 @@ export default function PlantSection(props) {
                     </VStack>
                 </GridItem>
 
-                <GridItem colSpan={2}>
+                <GridItem colSpan={5}>
                     <Fade>
                         <Image
                             src={props.imageUrl}

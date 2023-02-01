@@ -8,7 +8,7 @@ export default function OverviewSectionC(props) {
         <>
             {/* Title + Description */}
             <Grid
-                templateColumns='repeat(5, 1fr)'
+                templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(5, 1fr)', 'repeat(5, 1fr)']}
                 mt={['16px', '24px', '32px', '64px']}
             >
                 {/* Title */}
@@ -30,11 +30,12 @@ export default function OverviewSectionC(props) {
                 </GridItem>
 
                 {/* Description */}
-                <GridItem colSpan={3}>
+                <GridItem colSpan={3} pt={['16px', '20px', '0px', '0px']}>
                     <FadeRight>
                         <Text
                             fontSize={['12px', '15px', '16px', '20px']}
                             fontWeight='normal'
+                            textAlign='justify'
                             align='end'
                             pr={['12px', '20px', '24px', '32px']}
                             ml='8px'>

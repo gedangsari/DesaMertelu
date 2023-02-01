@@ -30,16 +30,18 @@ export default function AboutSection(props) {
                     px={['30px', '48px', '56px', '62px']}
                     pt={['8px', '12px', '16px', '32px']}
                     pb={['20px', '20px', '32px', '64px']}
+                    fontSize={['12px', '15px', '16px', '20px']}
+                    fontWeight='normal'
+                    mb={['12px', '16px', '18px', '34px']}
+                    textAlign='justify'
                 >
                     <FadeRight>
-                        <Text
-                            fontSize={['12px', '15px', '16px', '20px']}
-                            fontWeight='normal'
-                            mb={['12px', '16px', '18px', '34px']}
-                            textAlign='justify'
-                        >
-                            {props.aboutDescription}
-                        </Text>
+                        {props.aboutDescription
+                            .split('\\n')
+                            .map((item, i) =>
+                                <Text key={i}>{item}<br /><br /></Text>
+                            )
+                        }
                     </FadeRight>
                 </Box>
             </VStack>
@@ -69,7 +71,14 @@ export default function AboutSection(props) {
                         h={['50vh', '50vh', '80vh', '80vh']}
                         w='100vw'
                         objectFit='cover'
-                        py={['8px', '12px', '16px', '32px']} />
+                        pt={['8px', '12px', '16px', '32px']} />
+                    <Text
+                        fontSize={['8px', '10px', '12px', '16px']}
+                        fontWeight='normal'
+                        pb={['8px', '12px', '16px', '32px']}
+                    >
+                        {props.originImageCaption}
+                    </Text>
                 </Fade>
 
                 {/* Description */}
