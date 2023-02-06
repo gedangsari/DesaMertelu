@@ -4,7 +4,7 @@ import { Fade as FadeReveal } from 'react-awesome-reveal';
 const Fade = ({ children }) => {
     return (
         <>
-            <FadeReveal duration='1000' triggerOnce='true'>
+            <FadeReveal duration='1500' triggerOnce='true'>
                 {children}
             </FadeReveal>
         </>

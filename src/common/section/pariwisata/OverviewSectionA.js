@@ -5,12 +5,14 @@ import { Box, Grid, GridItem, HStack, Image, Link, Text, VStack } from "@chakra-
 
 export default function OverviewSectionA(props) {
     return (
-        <Grid templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(5, 1fr)', 'repeat(5, 1fr)']}>
-            <GridItem colSpan={3}>
+        <Grid
+            templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(5, 1fr)', 'repeat(5, 1fr)']}
+        >
+            <GridItem colSpan={3} display={['none', 'none', 'block', 'block']}>
                 <Fade>
                     <Image
                         src={props.image}
-                        h={['50vh', '50vh', '100vh', '100vh']}
+                        h='100vh'
                         w='100vw'
                         objectFit='cover' />
                 </Fade>
@@ -63,6 +65,16 @@ export default function OverviewSectionA(props) {
                     </Box>
 
                 </VStack>
+            </GridItem>
+
+            <GridItem colSpan={3} display={['block', 'block', 'none', 'none']}>
+                <Fade>
+                    <Image
+                        src={props.image}
+                        h='50vh'
+                        w='100vw'
+                        objectFit='cover' />
+                </Fade>
             </GridItem>
         </Grid>
     );

@@ -57,15 +57,18 @@ export default function OverviewSectionB(props) {
                             <Image
                                 src={props.image1}
                                 objectFit='cover'
-                                w={100 / 3 + '%'} />
+                                w={100 / 3 + '%'}
+                                h={['13vh', '20vh', '30vh', '40vh']} />
                             <Image
                                 src={props.image2}
                                 objectFit='cover'
-                                w={100 / 3 + '%'} />
+                                w={100 / 3 + '%'}
+                                h={['13vh', '20vh', '30vh', '40vh']} />
                             <Image
                                 src={props.image3}
                                 objectFit='cover'
-                                w={100 / 3 + '%'} />
+                                w={100 / 3 + '%'}
+                                h={['13vh', '20vh', '30vh', '40vh']} />
                         </HStack>
 
                         {/* Description */}
