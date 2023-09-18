@@ -1,16 +1,21 @@
 package com.mertelu.wisata.ui.screen
 
-import android.util.Log
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.DpSize
@@ -24,6 +29,7 @@ import com.mertelu.wisata.ui.components.MainMenuButton
 import com.mertelu.wisata.ui.theme.Green
 import com.mertelu.wisata.ui.theme.Typography
 import com.mertelu.wisata.ui.theme.White
+import com.mertelu.wisata.util.showToast
 import io.github.g00fy2.quickie.QRResult
 import io.github.g00fy2.quickie.ScanCustomCode
 import io.github.g00fy2.quickie.config.ScannerConfig
@@ -46,7 +52,7 @@ fun HomeScreen(
 }
 
 @Composable
-fun HomeContent(
+private fun HomeContent(
     attractionList: List<Attraction>,
     modifier: Modifier = Modifier,
     navigateToMaps: (String) -> Unit,
@@ -68,11 +74,13 @@ fun HomeContent(
 }
 
 @Composable
-fun HomeHeader(
+private fun HomeHeader(
     modifier: Modifier = Modifier,
     navigateToPlantDetails: (Long) -> Unit,
     navigateToReservation: () -> Unit,
 ) {
+    val context = LocalContext.current
+    
     Column(
         modifier = modifier
             .background(
@@ -102,9 +110,9 @@ fun HomeHeader(
             modifier = Modifier
                 .padding(top = 16.dp),
         )
-
+        
         Spacer(modifier = Modifier.height(52.dp))
-
+        
         Row(
             horizontalArrangement = Arrangement.SpaceEvenly,
             modifier = Modifier
@@ -114,18 +122,27 @@ fun HomeHeader(
                 when (result) {
                     is QRResult.QRSuccess -> {
                         val url = result.content.rawValue
-                        val validUrl = url.contains("https://mertelu.com/")
-                        if (validUrl) {
+                        val validUrl = url?.contains("mertelu.com")
+                        if (validUrl == true) {
                             val plantId = url.substringAfterLast("/").toLong()
                             navigateToPlantDetails(plantId)
+                        } else {
+                            context.showToast(R.string.toast_failed_invalid_qr_code_home)
                         }
                     }
-                    else -> {
-                        Log.d("QRCode", "QRCode scan failed")
+                    
+                    is QRResult.QRError -> {
+                        context.showToast(R.string.toast_failed_error_qr_code_home)
                     }
+                    
+                    QRResult.QRMissingPermission -> {
+                        context.showToast(R.string.toast_failed_scan_not_allowed_home)
+                    }
+                    
+                    QRResult.QRUserCanceled -> {}
                 }
             }
-
+            
             MainMenuButton(
                 title = R.string.btn_plant_scanner_home,
                 icon = R.drawable.ic_plant_scanner_24,
@@ -148,13 +165,13 @@ fun HomeHeader(
                 },
             )
         }
-
+        
         Spacer(modifier = Modifier.height(16.dp))
     }
 }
 
 @Composable
-fun HomeList(
+private fun HomeList(
     attractionList: List<Attraction>,
     modifier: Modifier = Modifier,
     navigateToMaps: (String) -> Unit,
@@ -170,26 +187,24 @@ fun HomeList(
             iconSize = DpSize(42.dp, 42.dp),
             iconPadding = 12.dp,
         )
-
+        
         Text(
             text = stringResource(R.string.lbl_sub_attraction_home),
             modifier = Modifier
                 .padding(top = 8.dp),
         )
-
+        
         Spacer(modifier = Modifier.height(24.dp))
-
+        
         LazyColumn(
             verticalArrangement = Arrangement.spacedBy(24.dp),
         ) {
-            items(attractionList) { data ->
+            items(attractionList, key = { it.name }) { data ->
                 AttractionItem(
                     name = data.name,
                     description = data.description,
                     imageUrl = data.imageUrl,
-                    modifier = Modifier.clickable {
-                        navigateToMaps(data.mapsUrl)
-                    }
+                    onClick = { navigateToMaps(data.mapsUrl) },
                 )
             }
         }
@@ -198,7 +213,7 @@ fun HomeList(
 
 @Preview(showBackground = true)
 @Composable
-fun HomeScreenPreview() {
+private fun HomeScreenPreview() {
     val attractionList = AttractionData.get()
     HomeScreen(
         attractionList = attractionList,

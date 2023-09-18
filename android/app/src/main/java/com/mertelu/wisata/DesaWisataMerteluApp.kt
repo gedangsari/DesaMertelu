@@ -26,7 +26,7 @@ fun DesaWisataMerteluApp(
     navController: NavHostController = rememberNavController(),
 ) {
     val context = LocalContext.current
-
+    
     Scaffold(
         modifier = modifier,
     ) { innerPadding ->

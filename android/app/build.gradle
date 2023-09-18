@@ -12,8 +12,8 @@ android {
         applicationId "com.mertelu.wisata"
         minSdk 21
         targetSdk 33
-        versionCode 1
-        versionName "1.0.0"
+        versionCode 2
+        versionName "1.1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -28,6 +28,7 @@ android {
                     'proguard-android-optimize.txt'
             ), 'proguard-rules.pro'
         }
+
         debug {
             minifyEnabled true
             proguardFiles getDefaultProguardFile(
@@ -64,25 +65,24 @@ android {
 dependencies {
     // Android Jetpack
     implementation "androidx.appcompat:appcompat:$appCompatVersion"
-    implementation "androidx.browser:browser:$browserVersion"
     implementation "androidx.core:core-ktx:$coreVersion"
     implementation "androidx.core:core-splashscreen:$splashScreenVersion"
-    implementation "com.google.android.material:material:$materialVersion"
 
     // Testing
     testImplementation "junit:junit:$junitVersion"
     androidTestImplementation "androidx.test.ext:junit:$junitExtVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$composeJunitVersion"
 
     // Compose
-    implementation "androidx.compose.ui:ui:$composeVersion"
-    implementation "androidx.compose.ui:ui-tooling-preview:$composeVersion"
-    implementation "androidx.compose.material:material:$composeMaterialVersion"
+    implementation platform("androidx.compose:compose-bom:$composeVersion")
+    implementation "androidx.compose.ui:ui"
+    implementation "androidx.compose.ui:ui-tooling-preview"
+    implementation "androidx.compose.material:material"
+    debugImplementation "androidx.compose.ui:ui-tooling"
+    debugImplementation "androidx.compose.ui:ui-test-manifest"
     implementation "androidx.activity:activity-compose:$activityVersion"
-    implementation "androidx.compose.foundation:foundation:$composeFoundationVersion"
-    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$composeVersion"
-    debugImplementation "androidx.compose.ui:ui-tooling:$composeVersion"
-    debugImplementation "androidx.compose.ui:ui-test-manifest:$composeVersion"
+
 
     // Navigation component
     implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"

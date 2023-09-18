@@ -1,15 +1,19 @@
 <resources>
+
     <string name="app_name">Desa Wisata Mertelu</string>
 
-    <string name="btn_cd_attraction_details_attractionitem">Lihat lokasi dan rute</string>
+    <string name="btn_cd_attraction_details_attractionitem">Tap untuk lihat detail dan rute di Google Maps</string>
 
     <string name="lbl_welcome_home">Selamat datang di</string>
     <string name="lbl_mertelu_home">Desa Wisata Mertelu</string>
     <string name="lbl_location_home">Gedangsari, Gunungkidul, Yogyakarta</string>
     <string name="btn_plant_scanner_home">Scan Tanaman</string>
     <string name="btn_reservation_home">Reservasi</string>
-    <string name="btn_cd_about_home">Tentang</string>
     <string name="lbl_title_attraction_home">Objek Wisata</string>
-    <string name="lbl_sub_attraction_home">Lihat lokasi dan rute</string>
+    <string name="lbl_sub_attraction_home">Tap untuk lihat detail dan rute di Google Maps</string>
     <string name="lbl_scan_qr_code_home">Scan QR code\ntanaman</string>
+    <string name="toast_failed_invalid_qr_code_home">Kode QR tidak valid</string>
+    <string name="toast_failed_error_qr_code_home">Scan gagal, mohon coba lagi</string>
+    <string name="toast_failed_scan_not_allowed_home">Penggunaan kamera belum diizinkan</string>
+
 </resources>

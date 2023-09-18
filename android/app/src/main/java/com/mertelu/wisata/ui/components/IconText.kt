@@ -57,7 +57,7 @@ fun IconText(
 
 @Preview(showBackground = true)
 @Composable
-fun IconTextPreview() {
+private fun IconTextPreview() {
     DesaWisataMerteluTheme {
         IconText(
             text = R.string.lbl_title_attraction_home,
