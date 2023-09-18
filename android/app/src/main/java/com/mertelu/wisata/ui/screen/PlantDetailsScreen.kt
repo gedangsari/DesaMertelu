@@ -22,7 +22,7 @@ fun PlantDetailsScreen(
 
 @SuppressLint("SetJavaScriptEnabled")
 @Composable
-fun PlantDetailsContent(
+private fun PlantDetailsContent(
     plantId: Long,
     modifier: Modifier = Modifier,
 ) {
@@ -34,11 +34,10 @@ fun PlantDetailsContent(
                     ViewGroup.LayoutParams.MATCH_PARENT
                 )
                 webViewClient = WebViewClient()
+                settings.javaScriptEnabled = true
             }
         },
         update = { webView ->
-            webView.settings.javaScriptEnabled = true
-
             val detailsUrl = "https://mertelu.com/plants/$plantId"
             webView.loadUrl(detailsUrl)
         },
@@ -48,7 +47,7 @@ fun PlantDetailsContent(
 
 @Preview(showBackground = true)
 @Composable
-fun PlantDetailsScreenPreview() {
+private fun PlantDetailsScreenPreview() {
     // TODO: adjust URL
     val plantId = 1L
     PlantDetailsScreen(

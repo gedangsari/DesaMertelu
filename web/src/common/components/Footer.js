@@ -63,8 +63,8 @@ export default function Footer(props) {
                     Copyright © 2023 <Link href='#'>Mertelu.com</Link>. All Rights Reserved.
                 </Text>
                 <Text w='60%' textAlign='end'>
-                    KKN-PPM UGM Periode IV Tahun 2022 - <Link href='https://instagram.com/gedangsari.asri' isExternal>
-                        Gedangsari Asri
+                    <Link href='https://instagram.com/gedangsari.asri' isExternal>
+                        KKN-PPM UGM Periode IV Tahun 2022 Unit Gedangsari
                     </Link>
                 </Text>
             </HStack>

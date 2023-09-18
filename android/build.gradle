@@ -1,27 +1,24 @@
 buildscript {
     ext {
-        gradleVersion = '7.3.1'
-        kotlinVersion = '1.7.20'
+        gradleVersion = '8.1.0'
+        kotlinVersion = '1.9.0'
+        navigationVersion = '2.6.0'
 
-        appCompatVersion = '1.6.0'
-        activityVersion = '1.6.1'
-        browserVersion = '1.4.0'
-        coreVersion = '1.9.0'
-        materialVersion = '1.8.0'
-        splashScreenVersion = '1.0.0'
+        activityVersion = '1.7.2'
+        appCompatVersion = '1.6.1'
+        coreVersion = '1.10.1'
+        splashScreenVersion = '1.0.1'
 
         junitVersion = '4.13.2'
         junitExtVersion = '1.1.5'
         espressoVersion = '3.5.1'
+        composeJunitVersion = '1.4.3'
 
-        composeVersion = '1.3.3'
-        composeCompilerVersion = '1.3.2'
-        composeMaterialVersion = '1.3.1'
-        composeFoundationVersion = '1.3.1'
-        navigationVersion = '2.5.3'
+        composeVersion = '2023.06.01'
+        composeCompilerVersion = '1.5.1'
 
-        coilVersion = '2.2.2'
-        quickieVersion = '1.6.0'
+        coilVersion = '2.4.0'
+        quickieVersion = '1.8.0'
     }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 

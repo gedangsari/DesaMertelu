@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="Theme.DesaWisataMertelu" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/green</item>
     </style>
+
+    <style name="Theme.DesaWisataMertelu.Starting" parent="Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/Theme.DesaWisataMertelu</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo_512</item>
+        <item name="windowSplashScreenBackground">@color/white</item>
+    </style>
+
 </resources>
