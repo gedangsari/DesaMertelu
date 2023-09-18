@@ -63,7 +63,7 @@ export default function Main() {
       <RouteSection
         title='Ayo mulai perjalananmu ke Mertelu sekarang'
       />
-      <Link href='https://app.mertelu.com' isExternal>
+      <Link href='https://aplikasimertelu.vercel.app' isExternal>
         <Image src={DownloadAppImage} w='100vw' />
       </Link>
     </Layout>
