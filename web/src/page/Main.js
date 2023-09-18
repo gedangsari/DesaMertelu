@@ -14,8 +14,8 @@ import OverviewAnyamanImage from '../assets/image/pariwisata/overview_anyaman.jp
 import OverviewCabaanImage from '../assets/image/pariwisata/overview_cabaan.jpg';
 import OverviewGvgImage from '../assets/image/pariwisata/overview_gvg.jpg';
 import OverviewWayangImage from '../assets/image/pariwisata/overview_wayang.jpg';
-import OverviewYohnanImage from '../assets/image/pariwisata/overview_yohnan.png';
-import DownloadAppImage from '../assets/image/pariwisata/download_app.png';
+import OverviewYohnanImage from '../assets/image/pariwisata/overview_yohnan.jpg';
+import DownloadAppImage from '../assets/image/pariwisata/download_app.jpg';
 
 export default function Main() {
   const [pariwisata, setPariwisata] = useState([]);
@@ -63,7 +63,7 @@ export default function Main() {
       <RouteSection
         title='Ayo mulai perjalananmu ke Mertelu sekarang'
       />
-      <Link href='https://play.google.com/store/apps/details?id=com.mertelu.wisata' isExternal>
+      <Link href='https://app.mertelu.com' isExternal>
         <Image src={DownloadAppImage} w='100vw' />
       </Link>
     </Layout>
